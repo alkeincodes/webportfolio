@@ -1,0 +1,76 @@
+@use 'sass:math';
+@use '../utils' as *;
+
+$menu-items: 5;
+$menu-items-loop-offset: $menu-items - 1;
+
+$width: math.div(100, $menu-items) * 1%;
+
+.site-header {
+    padding: $padding * 5;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    @for $i from 1 through $menu-items-loop-offset {
+        .nav-item:nth-child(#{$i}).active ~ .nav-item:last-child:after {
+            transition: all 0.3s;
+            left: ($width*$i)-$width;
+        }
+    }
+
+
+    nav {
+        @include flexbox(row, center, initial);
+        margin: 0 auto;
+        width: fit-content;
+        position: relative;
+
+        a {
+            color: $default-font-color;
+            &:not(:last-child) {
+                margin-right: 100px;
+            }
+
+            &.nav-item {
+                &:nth-child(1).active ~ .nav-item:last-child:after {
+                    margin-left: 3%;
+                }
+                &:nth-child(2).active ~ .nav-item:last-child:after {
+                    margin-left: 5%;
+                }
+                &:nth-child(4).active ~ .nav-item:last-child:after {
+                    margin-left: 12%;
+                }
+            }
+
+            &.nav-item:last-child {
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $primary;
+                    border-radius: 50%;
+                    bottom: 0;
+                    transition: 0.3s;
+                    left: 96.5%;
+                }
+            }
+        }
+
+        .active {
+            color: $primary;
+
+            &-dot {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: $primary;
+                border-radius: 50%;
+                bottom: 0;
+            }
+        }
+    }
+}

@@ -48,7 +48,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:5500/api'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -65,6 +67,11 @@ export default {
           grid: true
         }
       }
+    },
+    babel:{
+      plugins: [
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }]
+      ]
     }
   }
 }
