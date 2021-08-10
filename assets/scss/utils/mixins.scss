@@ -1,0 +1,32 @@
+@mixin flexbox($direction: initial, $align: initial, $justify: initial) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin box-sizing($type) {
+  box-sizing: $type;
+}
+
+@mixin size($width, $height: $width, $maxwidth: none) {
+  width: $width;
+  max-width: $maxwidth;
+  height: $height;
+}
+
+
+@mixin horizontalScroll {
+  &::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background-color: #e8e8e8;
+  }
+}
