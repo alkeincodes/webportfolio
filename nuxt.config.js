@@ -19,6 +19,8 @@ export default {
     ]
   },
 
+  target: 'server',
+
   alias: {
     'style': resolve(__dirname, './assets/scss')
   },
@@ -49,7 +51,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:5500/api'
+    baseURL: 'http://localhost:5000/api'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
