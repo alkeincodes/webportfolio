@@ -12,8 +12,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Laravel + VueJS Developer • Highly rated Freelancer in Upwork • UI/UX Designer' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { property: "og:title", content: 'Alkein Villajos | Laravel + VueJS Developer | Highly rated Freelancer in Upwork' },
+      { property: "og:description", content: 'Laravel + VueJS Developer • Highly rated Freelancer in Upwork • UI/UX Designer' },
+      { property: "og:image", content: 'https://i.im.ge/2021/08/12/jaTKa.png' },
+      { property: "og:type", content: 'website' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
