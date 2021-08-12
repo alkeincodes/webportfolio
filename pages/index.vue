@@ -1,6 +1,9 @@
 <template>
-  <div class="container" style="text-align: center; padding: 32px;">
-    <ul></ul>
+  <div>
+    <site-header />
+    <div class="container">
+      <hero />
+    </div>
   </div>
 </template>
 

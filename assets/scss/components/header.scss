@@ -8,9 +8,10 @@ $width: math.div(100, $menu-items) * 1%;
 
 .site-header {
     padding: $padding * 5;
-    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 100%;
-    z-index: 1000;
 
     @for $i from 1 through $menu-items-loop-offset {
         .nav-item:nth-child(#{$i}).active ~ .nav-item:last-child:after {
@@ -19,7 +20,9 @@ $width: math.div(100, $menu-items) * 1%;
         }
     }
 
-
+    @include breakpoint-down(small) {
+      padding: 5px;
+    }
     nav {
         @include flexbox(row, center, initial);
         margin: 0 auto;
@@ -28,8 +31,13 @@ $width: math.div(100, $menu-items) * 1%;
 
         a {
             color: $default-font-color;
+            text-decoration: none;
+
             &:not(:last-child) {
                 margin-right: 100px;
+                @include breakpoint-down(small) {
+                  padding: 20px;
+                }
             }
 
             &.nav-item {
@@ -57,6 +65,59 @@ $width: math.div(100, $menu-items) * 1%;
                     transition: 0.3s;
                     left: 96.5%;
                 }
+            }
+
+            @include breakpoint-down(small) {
+              padding: 10px !important;
+              &:not(:last-of-type) {
+                margin-right: 10px;
+              }
+
+              &.nav-item {
+                &:nth-child(1).active ~ .nav-item:last-child:after {
+                    margin-left: 7%;
+                }
+                &:nth-child(2).active ~ .nav-item:last-child:after {
+                    margin-left: 6.5%;
+                }
+                // &:nth-child(3).active ~ .nav-item:last-child:after {
+                //     margin-left: 12%;
+                // }
+                &:nth-child(4).active ~ .nav-item:last-child:after {
+                    margin-left: 9.5%;
+                }
+                &:last-of-type.active::after {
+                    margin-left: -4.5%;
+                }
+              }
+            }
+
+            @include breakpoint-down(xsmall) {
+              font-size: rem(14);
+
+              &:not(:last-child) {
+                margin-right: 0;
+              }
+
+              padding: 10px !important;
+
+              &.nav-item {
+                &:nth-child(1).active ~ .nav-item:last-child:after {
+                    margin-left: 7.5%;
+                }
+                &:nth-child(2).active ~ .nav-item:last-child:after {
+                    margin-left: 6%;
+                }
+                // &:nth-child(3).active ~ .nav-item:last-child:after {
+                //     margin-left: 12%;
+                // }
+                &:nth-child(4).active ~ .nav-item:last-child:after {
+                    margin-left: 9.5%;
+                }
+                &:last-of-type.active::after {
+                    margin-left: -5%;
+                }
+              }
             }
         }
 

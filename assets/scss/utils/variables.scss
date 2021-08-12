@@ -1,8 +1,11 @@
 // Base Colors
+@use 'functions' as *;
+
 $primary: hsl(239, 52%, 48%);
 $accent: #4db6ac;
 $orange: #E16239;
 $orange-light: #f6c3b2;
+$gray-text: #777777;
 $default-font-color: hsl(0, 0%, 18%);
 $bg-color: hsl(216, 42%, 95%);
 

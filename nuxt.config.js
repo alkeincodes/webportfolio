@@ -5,7 +5,7 @@ require('dotenv').config()
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'alkeincodes',
+    title: 'Alkein Villajos • Frontend Developer',
     htmlAttrs: {
       lang: 'en'
     },
@@ -37,7 +37,12 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components/',
+    '~/components/icons',
+    '~/components/sections',
+    '~/components/partials'
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -63,12 +68,16 @@ export default {
       // Install them before as dependencies with npm or yarn
       plugins: {
         // Disable a plugin by passing false as value
-        'postcss-url': false
+        'postcss-url': true,
+        // 'postcss-nested': {},
+        // 'postcss-responsive-type': {},
+        // 'postcss-hexrgba': {}
       },
       preset: {
         // Change the postcss-preset-env settings
         autoprefixer: {
-          grid: true
+          grid: true,
+          flexbox: true
         }
       }
     },

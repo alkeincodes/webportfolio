@@ -3,3 +3,9 @@
 body {
   background-color: $bg-color;
 }
+
+.container {
+  width: 100%;
+  max-width: 1464px;
+  margin: 0 auto;
+}
