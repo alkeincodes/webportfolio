@@ -9,3 +9,77 @@ body {
   max-width: 1464px;
   margin: 0 auto;
 }
+
+.section-header {
+  padding: $padding * 2;
+  text-align: center;
+}
+
+.section {
+  &-title {
+    color: $primary;
+    font-size: $font-xl * 1.5;
+    margin-bottom: $margin * 2;
+
+    @include breakpoint-down(small) {
+      font-size: rem(30);
+    }
+  }
+  &-subtitle {
+    color: $gray-text;
+    font-size: $font-md;
+    line-height: 1.5;
+
+    @include breakpoint-down(small) {
+      font-size: $font-sm;
+    }
+  }
+}
+
+.footer {
+  background-color: $primary;
+  padding-block: $padding * 7;
+  padding-inline: $padding * 10;
+
+  & > div {
+    @include flexbox(row, center, space-between);
+  }
+
+  .contact-me {
+    @include flexbox(column, initial, initial);
+    width: 50%;
+
+    .input-name {
+      max-width: 200px;
+    }
+  }
+
+  .watermark {
+    @include flexbox(column, center, initial);
+
+    svg {
+      margin-bottom: $margin;
+    }
+
+    span {
+      color: white;
+      display: inline-block;
+      font-size: $font-sm;
+    }
+  }
+}
+
+
+input, textarea {
+  padding: $padding * 2;
+  outline: none;
+  border-radius: $border-radius;
+  border: none;
+  margin-bottom: $margin * 2;
+  max-width: 400px;
+
+  &::placeholder {
+    font-family: 'Rubik', sans-serif;
+    color: #C5C5C5;
+  }
+}

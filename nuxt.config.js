@@ -24,6 +24,13 @@ export default {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' },
     ]
   },
+  // script: [
+  //   {
+  //     type: 'text/javascript',
+  //     src: '',
+  //     body: true
+  //   }
+  // ],
 
   target: 'server',
 
@@ -37,8 +44,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: [
@@ -72,7 +78,7 @@ export default {
       // Install them before as dependencies with npm or yarn
       plugins: {
         // Disable a plugin by passing false as value
-        'postcss-url': true,
+        'postcss-url': false,
         // 'postcss-nested': {},
         // 'postcss-responsive-type': {},
         // 'postcss-hexrgba': {}
@@ -80,8 +86,7 @@ export default {
       preset: {
         // Change the postcss-preset-env settings
         autoprefixer: {
-          grid: true,
-          flexbox: true
+          grid: true
         }
       }
     },

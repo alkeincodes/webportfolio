@@ -1,0 +1,68 @@
+@use '../utils' as *;
+
+.projects {
+  width: 100%;
+  margin: 130px auto;
+  position: relative;
+
+  .circle-grid {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+}
+
+.project-list {
+  // display: flex;
+  // overflow-x: auto;
+
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: auto;
+  row-gap: 50px;
+  column-gap: 50px;
+  justify-content: center;
+
+  margin-top: $margin * 4;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include breakpoint-down(medium) {
+    grid-template-columns: 350px 350px;
+  }
+
+  @include breakpoint-down(xsmall) {
+    grid-template-columns: 300px !important;
+  }
+
+  // &:after {
+  //   content: '';
+  //   width: 500px;
+  //   height: 500px;
+  //   border: 20px solid $accent;
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: 5;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   top: 50%;
+  // }
+}
+
+
+@media screen and (max-width: 1090px) {
+  .project-list {
+    grid-template-columns: 350px 350px;
+
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .project-list {
+    grid-template-columns: 350px;
+  }
+}

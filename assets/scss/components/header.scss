@@ -12,6 +12,12 @@ $width: math.div(100, $menu-items) * 1%;
     top: 0;
     z-index: 100;
     width: 100%;
+    transition: 0.3s ease;
+
+    &.header-bg {
+      background-color: rgba(255,255,255,.5);
+      backdrop-filter: blur( 10.5px );
+    }
 
     @for $i from 1 through $menu-items-loop-offset {
         .nav-item:nth-child(#{$i}).active ~ .nav-item:last-child:after {

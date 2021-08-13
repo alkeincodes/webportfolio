@@ -1,6 +1,12 @@
 @use 'variables' as *;
 
 .text {
+  &-center {
+    text-align: center;
+  }
+
+
+
   &-primary {
       color: $primary;
   }

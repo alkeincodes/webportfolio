@@ -1,0 +1,111 @@
+@use '../utils' as *;
+@use 'sass:math';
+
+.tags-container {
+  @include flexbox(row, center, initial);
+
+  .tags:not(:last-of-type) {
+    margin-right: $margin;
+  }
+}
+
+.tags {
+  background-color: #777777;
+  width: max-content;
+  padding: math.div($padding, 2) $padding;
+  border-radius: 32px;
+  font-size: $font-xs;
+
+  @include breakpoint-down(xsmall) {
+    font-size: $font-xxs;
+  }
+}
+
+.single-project {
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  min-width: 300px;
+  height: 440px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  &__thumb {
+    background-image: url('~/assets/images/projects/searchie.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: $padding * 3;
+    height: 185px;
+    color: white;
+
+    .title-container {
+      @include flexbox(row, center, space-between);
+
+      @include breakpoint-down(xsmall) {
+        span {
+          font-size: $font-sm;
+        }
+      }
+    }
+
+    @include breakpoint-down(xsmall) {
+      height: 158px;
+    }
+  }
+
+  &__details {
+    padding-inline: $padding * 3;
+    padding-block: $padding * 2;
+
+    .job-function {
+      font-size: $font-xs;
+      line-height: 1.5;
+      color: $gray-text;
+      text-transform: uppercase;
+      font-weight: lighter;
+
+      @include breakpoint-down(xsmall) {
+        font-size: rem(10);
+      }
+    }
+
+    .project-title {
+      margin-top: math.div($margin, 2);
+      font-size: $font-lg;
+
+      @include breakpoint-down(xsmall) {
+        font-size: $font-md;
+      }
+    }
+
+    .read-more {
+      color: $primary;
+      font-weight: 400;
+      font-size: rem(16);
+      text-decoration: none;
+      position: absolute;
+      left: $padding * 5 + 5;
+      bottom: $padding * 4;
+      transition: 0.3s ease;
+
+      svg {
+        transform: translateX(-45%);
+        opacity: 0;
+        transition: 0.3s ease;
+        margin-left: $margin;
+      }
+
+      &:hover {
+        svg {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  @include breakpoint-down(medium) {
+
+  }
+}

@@ -1,0 +1,16 @@
+@use '../utils' as *;
+
+.client-feedback {
+  background-color: #E0E8F3;
+  position: relative;
+  min-height: 600px;
+
+  .line-grid {
+    background: url('~/assets/images/line-grid.png');
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+}

@@ -1,0 +1,15 @@
+@use '../utils/' as *;
+
+.blog {
+  &-list {
+    & > div {
+      margin-bottom: $margin * 5;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      margin-bottom: $margin * 4;
+    }
+  }
+}

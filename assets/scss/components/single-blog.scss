@@ -1,0 +1,54 @@
+@use '../utils' as *;
+
+.single-blog {
+  @include flexbox(row, initial, initial);
+  min-height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+
+  &__image {
+    background-image: url('https://images.unsplash.com/photo-1511376777868-611b54f68947?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+  &__details {
+    @include flexbox(column, initial, space-between);
+    padding: $padding * 4;
+    background-color: white;
+    width: 100%;
+
+    * {
+      color: #484848;
+    }
+
+    .upper {
+      .title {
+        font-size: rem(28);
+
+        @include breakpoint-down(medium) {
+          font-size: $font-md + rem(2);
+        }
+      }
+      .teaser {
+        font-size: $font-md;
+        font-weight: lighter;
+
+        @include breakpoint-down(medium) {
+          font-size: $font-sm + rem(2);
+        }
+      }
+    }
+
+    .lower {
+      @include flexbox(row, center, space-between);
+      .date,
+      .proximity {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
