@@ -43,6 +43,10 @@ body {
 
   & > div {
     @include flexbox(row, center, space-between);
+
+    @media screen and (max-width: 811px) {
+      flex-direction: column;
+    }
   }
 
   .contact-me {
@@ -51,6 +55,11 @@ body {
 
     .input-name {
       max-width: 200px;
+    }
+
+    @media screen and (max-width: 811px) {
+      margin-bottom: $margin * 4;
+      width: 100%;
     }
   }
 
@@ -66,6 +75,25 @@ body {
       display: inline-block;
       font-size: $font-sm;
     }
+
+    .socials {
+      @include flexbox(row, center, initial);
+      margin-top: $margin * 2;
+      svg {
+        width: 24px;
+      }
+
+      a {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 425px) {
+    padding-inline: $padding * 5;
   }
 }
 
@@ -77,9 +105,9 @@ input, textarea {
   border: none;
   margin-bottom: $margin * 2;
   max-width: 400px;
+  font-family: 'Rubik', sans-serif;
 
   &::placeholder {
-    font-family: 'Rubik', sans-serif;
     color: #C5C5C5;
   }
 }

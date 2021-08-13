@@ -22,6 +22,12 @@
     <div class="site-hero__socials">
       <ul>
         <li>
+          <a href="https://github.com/alkeincodes" target="_blank">
+            <div class="icon-container"><icon-github /></div>
+            <span>Github</span>
+          </a>
+        </li>
+        <li>
           <a href="mailto:alkein.developments@gmail.com">
             <div class="icon-container"><icon-google /></div>
             <span>Google</span>
@@ -31,12 +37,6 @@
           <a href="https://www.youtube.com/c/SimpleWebTutorial" target="_blank">
             <div class="icon-container"><icon-youtube /></div>
             <span>Youtube</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/alkeincodes" target="_blank">
-            <div class="icon-container"><icon-github /></div>
-            <span>Github</span>
           </a>
         </li>
         <li>

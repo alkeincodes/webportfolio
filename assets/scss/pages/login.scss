@@ -1,0 +1,18 @@
+@use '../utils' as *;
+
+.login {
+  @include flexbox(row, center, center);
+  height: 100vh;
+
+  .form-container {
+    @include flexbox(column, initial, initial);
+    background-color: white;
+    width: 300px;
+
+    padding: $padding * 2;
+
+    input {
+      background-color: rgb(243, 243, 243);
+    }
+  }
+}

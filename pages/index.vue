@@ -21,6 +21,12 @@
         <div class="watermark">
           <icon-footer-logo />
           <span>This website is made with ❤️ by me</span>
+          <nav class="socials">
+            <a href="https://github.com/alkeincodes"><icon-github /></a>
+            <a href="mailto:alkein.developments@gmail.com"><icon-google /></a>
+            <a href="https://www.youtube.com/c/SimpleWebTutorial"><icon-youtube /></a>
+            <a href="https://www.linkedin.com/in/alkein-villajos-9520a017b/"><icon-linkedin /></a>
+          </nav>
         </div>
       </div>
     </footer>

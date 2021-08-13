@@ -141,3 +141,28 @@ $width: math.div(100, $menu-items) * 1%;
         }
     }
 }
+
+
+.inner-header {
+  padding-block: $padding * 4;
+  background-color: $primary;
+  padding-inline: $padding * 6;
+
+  & > div {
+    @include flexbox(row, center, space-between);
+
+    @media screen and (max-width: 608px) {
+      flex-direction: column;
+
+      & > a {
+        margin-bottom: $margin * 2;
+      }
+    }
+  }
+
+  &__socials {
+    a {
+      margin-right: $margin * 2;
+    }
+  }
+}
