@@ -5,12 +5,13 @@
     text-align: center;
   }
 
-
-
   &-primary {
-      color: $primary;
+    color: $primary;
   }
   &-secondary {
-      color: $gray-text;
+    color: $gray-text;
+  }
+  &-danger {
+    color: #D51B1B;
   }
 }
