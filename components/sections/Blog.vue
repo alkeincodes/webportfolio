@@ -12,7 +12,7 @@
       </template>
       <template v-else>
         <div class="text-center">
-          <span>No blog post yet.</span>
+          <span>No blog posts yet.</span>
         </div>
       </template>
     </div>
