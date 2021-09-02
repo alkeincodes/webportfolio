@@ -37,7 +37,7 @@
 export default {
   name: 'Home',
   mounted() {
-    this.$store.dispatch('blogs/getBlogs')
+    // this.$store.dispatch('blogs/getBlogs')
   }
 }
 </script>
