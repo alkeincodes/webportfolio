@@ -1,5 +1,6 @@
 <template>
   <div class="site-hero">
+    <div id="projects" class="scroll-target"></div>
     <div class="site-hero__text">
       <span class="text-secondary">I specialize in</span>
       <h1 class="text-primary">Frontend Development</h1>

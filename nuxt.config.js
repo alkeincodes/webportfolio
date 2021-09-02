@@ -12,13 +12,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Laravel + VueJS Developer • Highly rated Freelancer in Upwork • UI/UX Designer' },
+      { hid: 'description', name: 'description', content: 'Laravel + VueJS Developer • Top Rated Freelancer on Upwork • UI/UX Designer' },
       { name: 'format-detection', content: 'telephone=no' },
-      { property: "og:title", content: 'Alkein Villajos | Laravel + VueJS Developer | Highly rated Freelancer in Upwork' },
-      { property: "og:description", content: 'Laravel + VueJS Developer • Highly rated Freelancer in Upwork • UI/UX Designer' },
+      { property: "og:title", content: 'Alkein Villajos | Laravel + VueJS Developer | UI/UX Designer' },
+      { property: "og:description", content: 'Laravel + VueJS Developer • Top Rated Freelancer on Upwork • UI/UX Designer' },
       { property: "og:image", content: 'https://i.im.ge/2021/08/12/jaTKa.png' },
       { property: "og:type", content: 'website' },
-      { 'http-equiv': "Content-Security-Policy", content: 'upgrade-insecure-requests' },
+      // { 'http-equiv': "Content-Security-Policy", content: 'upgrade-insecure-requests' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

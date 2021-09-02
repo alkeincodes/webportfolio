@@ -4,7 +4,7 @@
       <nav>
         <a
           class="nav-item"
-          href="#"
+          href="#hero"
           :class="{active: activeNav == 1}"
           @click="activeNav = 1"
         >
@@ -12,7 +12,7 @@
           </a>
         <a
           class="nav-item"
-          href="#"
+          href="#projects"
           :class="{active: activeNav == 2}"
           @click="activeNav = 2"
         >
@@ -23,7 +23,7 @@
         </a>
         <a
           class="nav-item"
-          href="#"
+          href="#feedback"
           :class="{active: activeNav == 3}"
           @click="activeNav = 3"
         >
@@ -31,7 +31,7 @@
         </a>
         <a
           class="nav-item"
-          href="#"
+          href="#blogs"
           :class="{active: activeNav == 4}"
           @click="activeNav = 4"
         >

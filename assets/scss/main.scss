@@ -8,6 +8,28 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
+}
+
+
+// :target:before {
+//   content: "";
+//   display: block;
+//   // height: 150px;
+//   margin: -100px 0 0;
+// }
+
+
+.scroll-target {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  top: -130px;
+  opacity: 0;
 }

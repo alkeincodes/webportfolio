@@ -32,9 +32,9 @@
   z-index: 10;
 
   &__thumb {
-    background-image: url('~/assets/images/projects/searchie.png');
+    // background-image: url('~/assets/images/projects/paykickstart.png') !important;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding: $padding * 3;
     height: 185px;
     color: white;

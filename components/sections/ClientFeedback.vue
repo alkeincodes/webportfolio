@@ -1,5 +1,6 @@
 <template>
   <div class="client-feedback">
+    <div id="feedback" class="scroll-target"></div>
     <div class="line-grid"></div>
     <div class="section-header mb-4">
       <h1 class="section-title">Client Feedback</h1>

@@ -1,13 +1,13 @@
 <template>
   <div>
     <site-header />
-    <div class="container">
+    <div id="hero" class="container">
       <hero />
       <projects />
     </div>
     <client-feedback />
     <div class="container">
-      <blog />
+      <blog id="blogs" />
     </div>
 
     <footer class="footer">
@@ -16,7 +16,7 @@
           <input class="input-name" type="text" placeholder="Name">
           <input type="text" placeholder="Email">
           <textarea placeholder="Let's talk about your project." rows="5" cols="7" />
-          <button class="button button--orange">Send</button>
+          <button class="button button--orange" disabled>Send</button>
         </div>
         <div class="watermark">
           <icon-footer-logo />
