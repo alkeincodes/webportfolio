@@ -1,6 +1,6 @@
 <template>
   <div class="single-project">
-    <div class="single-project__thumb" :style="{backgroundImage: `url('/_nuxt/assets/images/projects/${project.image}')`}">
+    <div class="single-project__thumb" :style="{backgroundImage: `url('${project.image}')`}">
       <div class="title-container">
       <span>{{ project.title }}</span>
 

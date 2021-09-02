@@ -5,7 +5,7 @@
       <icon-circle-grid-small class="circle-grid" />
       <div class="section-header">
         <h1 id="projects" class="section-title">Projects</h1>
-        <p class="section-subtitle">Here are some of my projects that I work with in the past. <br>Some of it are my self-published NPM Packages.</p>
+        <p class="section-subtitle">Here are some of my projects that I work with in the past.</p>
       </div>
 
       <div class="project-list">
@@ -27,7 +27,7 @@ export default {
           job: 'UI/UX Logic Implementation',
           tagline: 'Searchie - A Better Way To Deliver Video',
           url: 'https://www.searchie.io',
-          image: 'searchie.png'
+          image: 'https://i.ibb.co/NnhRKjV/searchie.png'
         },
         {
           title: 'Paykickstart',
@@ -35,7 +35,7 @@ export default {
           job: 'UI/UX Logic Implementation',
           tagline: 'Paykickstart - Focus On Your Product',
           url: 'https://paykickstart.com',
-          image: 'paykickstart.png'
+          image: 'https://i.ibb.co/HdVfmgw/paykickstart.png'
         },
         {
           title: 'Zurra',
@@ -43,7 +43,7 @@ export default {
           job: 'UI/UX Design & Logic Implementation',
           tagline: 'Zurra - Paradise Point',
           url: 'https://paradisepoint.stage.zurra.com',
-          image: 'zurra.jpg'
+          image: 'https://i.ibb.co/RPVFvnf/zurra.jpg'
         },
         {
           title: 'Testnetic',
@@ -51,23 +51,23 @@ export default {
           job: 'UI/UX Logic Implementation',
           tagline: 'Testnetic - Faster Development Cycle',
           url: 'https://www.testnetic.com',
-          image: 'testnetic.jpg'
+          image: 'https://i.ibb.co/3BzqPBJ/testnetic.jpg'
         },
         {
           title: 'VueJS Pagination',
           tech: ['VueJS'],
-          job: 'Open-source Software',
+          job: 'My Open-source Software',
           tagline: 'VueJS Pagination - Elegant Pagination Component',
           url: 'https://www.npmjs.com/package/@alkeincodes/vuejs-pagination',
-          image: 'pagination.gif'
+          image: 'https://i.ibb.co/mzkFRC4/pagination.gif'
         },
         {
           title: 'VueJS Skeleton Loading',
           tech: ['VueJS'],
-          job: 'Open-source Software',
+          job: 'My Open-source Software',
           tagline: 'VueJS Skeleton Loading - Improve Your Loading State',
           url: 'https://www.npmjs.com/package/@alkeincodes/vuejs-skeleton-loading',
-          image: 'skeleton.gif'
+          image: 'https://i.ibb.co/YjZxr9t/skeleton.gif'
         }
       ]
     }
