@@ -28,9 +28,9 @@ export default {
     }
   },
   mounted() {
-    this.$axios.get('/blogs').then(({ data }) => {
-      this.blogs = data
-    })
+    // this.$axios.get('/blogs').then(({ data }) => {
+    //   this.blogs = data
+    // })
   }
 }
 </script>
