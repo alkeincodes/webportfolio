@@ -40,7 +40,7 @@ export default {
 
         if (data.user) {
           this.$store.dispatch('auth/SET_USER', data.user)
-          this.$router.push('/admin')
+          this.$router.push('/adminLKNblog')
         }
       }).catch((err) => {
         this.error = err.response.data.error

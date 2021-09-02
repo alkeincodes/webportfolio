@@ -13,3 +13,21 @@
     }
   }
 }
+
+
+.admin-blog {
+  @include flexbox(row, initial, initial);
+
+  & > div {
+    width: 50%;
+    padding: $padding * 2;
+
+    .paper {
+      background-color: white;
+      min-height: 500px;
+      width: 80%;
+      margin: 0 auto;
+      padding: $padding * 2;
+    }
+  }
+}

@@ -18,6 +18,7 @@ export default {
       { property: "og:description", content: 'Laravel + VueJS Developer • Highly rated Freelancer in Upwork • UI/UX Designer' },
       { property: "og:image", content: 'https://i.im.ge/2021/08/12/jaTKa.png' },
       { property: "og:type", content: 'website' },
+      { 'http-equiv': "Content-Security-Policy", content: 'upgrade-insecure-requests' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
