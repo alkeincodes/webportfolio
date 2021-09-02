@@ -42,6 +42,10 @@
     .title-container {
       @include flexbox(row, center, space-between);
 
+      span {
+        opacity: 0;
+      }
+
       @include breakpoint-down(xsmall) {
         span {
           font-size: $font-sm;
